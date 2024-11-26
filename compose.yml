@@ -1,0 +1,7 @@
+services:
+  unlighthouse:
+    build:
+      context: ./
+    ports:
+      - '5678:5678'
+    command: pnpm dlx unlighthouse --site https://google.com/ --debug
